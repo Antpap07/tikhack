@@ -16,4 +16,6 @@ os.system("sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.
 os.system("sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list")
 os.system("sudo apt-get -y update")
 os.system("sudo apt-get -y install google-chrome-stable")
+
+# Give permission to run.
 os.system("chmod +x tikhack.py")
