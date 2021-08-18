@@ -31,10 +31,10 @@ def main():
 
     global fb_name, service
 
-    service = args.service
+    
     username = args.username
     wordlist = args.password
-    delay = args.delay
+    
 
 
     if os.path.exists(wordlist) == False:
@@ -44,9 +44,7 @@ def main():
         exit(1)
 
 
-    if delay is None:
-
-        delay = 1
+   
 
     os.system("clear")
 
