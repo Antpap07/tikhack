@@ -10,6 +10,10 @@ os.system("sudo apt-get remove google-chrome-stable")
 # Install dependencies.
 os.system("sudo apt-get update")
 os.system("sudo apt-get install -y unzip openjdk-8-jre-headless xvfb libxi6 libgconf-2-4")
+os.system("sudo apt-get install python-pip && sudo apt-get install tor")   
+os.system("pip install -U selenium")
+os.system("pip install Pysocks")
+os.system("pip install pyvirtualdisplay && apt-get install xvfb")
 
 # Install Chrome.
 os.system("sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add")
